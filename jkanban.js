@@ -6,11 +6,9 @@
  * @author: Riccardo Tartaglia
  */
 
-//Require dragula
-var dragula = require('dragula');
+import dragula from "dragula";
 
-(function () {
-  this.jKanban = function () {
+const jKanban = function () {
     var self = this
     var __DEFAULT_ITEM_HANDLE_OPTIONS = {
       enabled: false
@@ -604,5 +602,6 @@ var dragula = require('dragula');
 
     //init plugin
     this.init()
-  }
-})()
+}
+
+export default jKanban; // export it
